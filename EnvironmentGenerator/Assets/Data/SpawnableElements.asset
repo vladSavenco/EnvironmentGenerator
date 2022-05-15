@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e97f248d1a50c146a94b20a19fb71b9, type: 3}
   m_Name: SpawnableElements
   m_EditorClassIdentifier: 
-  basicWalls: []
-  wallsWithWindow: []
-  wallsWithDoor: []
-  floors: []
-  tables: []
-  chairs: []
+  basicWalls:
+  - {fileID: 5383851328725564589, guid: 538a4c74b213d4840bedda31b36a6b01, type: 3}
+  wallsWithWindow:
+  - {fileID: 4401195747480790744, guid: 263da2a6c7db07f41a4109eab4767f48, type: 3}
+  wallsWithDoor:
+  - {fileID: 5139649339177179759, guid: d609dba868a45c3429deab3f8456e73f, type: 3}
+  floors:
+  - {fileID: 6347968687406633969, guid: b52f8268e560fc64d97bcf3c78da36cd, type: 3}
+  tables:
+  - {fileID: 855511006313233263, guid: 7d3eb1132749e0d4d97aad7f47f27597, type: 3}
+  chairs:
+  - {fileID: 5790693231171098851, guid: d5e16a4c982033542a1fe469dc14f0ca, type: 3}
   sofas: []
   bookshelfs: []
   floorLamps: []
