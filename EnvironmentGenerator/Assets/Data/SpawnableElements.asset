@@ -19,7 +19,7 @@ MonoBehaviour:
   wallsWithDoor:
   - {fileID: 5139649339177179759, guid: d609dba868a45c3429deab3f8456e73f, type: 3}
   floors:
-  - {fileID: 6347968687406633969, guid: b52f8268e560fc64d97bcf3c78da36cd, type: 3}
+  - {fileID: 1880342471415592590, guid: 219d6676d4df6c443b04763b3d1cb947, type: 3}
   tables:
   - {fileID: 855511006313233263, guid: 7d3eb1132749e0d4d97aad7f47f27597, type: 3}
   chairs:
@@ -29,8 +29,11 @@ MonoBehaviour:
   floorLamps: []
   paintings: []
   wallLamps: []
-  mugs: []
-  plants: []
-  plates: []
+  mugs:
+  - {fileID: 8128776839648765489, guid: 67734907861f30a44a8a49019fe4cba7, type: 3}
+  plants:
+  - {fileID: 4777897140066394257, guid: dba2b2c3d05bfda45a262918ce590610, type: 3}
+  plates:
+  - {fileID: 2385178150774696817, guid: bcdb0868b1808ad4e8c8be0d6752242d, type: 3}
   books: []
   others: []

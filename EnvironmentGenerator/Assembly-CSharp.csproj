@@ -56,12 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ChairGenerator.cs" />
     <Compile Include="Assets\Scripts\WallGenerator.cs" />
     <Compile Include="Assets\Scripts\RoomGeneratorController.cs" />
-    <Compile Include="Assets\ScriptableObjects\SpawnableElements.cs" />
-    <Compile Include="Assets\Scripts\FloorObjectGenerator.cs" />
     <Compile Include="Assets\Scripts\WallObjectGenerator.cs" />
-    <Compile Include="Assets\Scripts\ChairGenerator.cs" />
+    <Compile Include="Assets\Scripts\FloorObjectGenerator.cs" />
+    <Compile Include="Assets\ScriptableObjects\SpawnableElements.cs" />
+    <Compile Include="Assets\Scripts\TableObjectGenerator.cs" />
+    <Compile Include="Assets\ScriptableObjects\UsableMaterials.cs" />
+    <Compile Include="Assets\Scripts\CameraRandomizer.cs" />
+    <Compile Include="Assets\Scripts\ScreenshotHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

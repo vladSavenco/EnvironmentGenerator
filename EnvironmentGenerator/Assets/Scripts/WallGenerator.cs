@@ -5,6 +5,7 @@ using UnityEngine;
 public class WallGenerator : MonoBehaviour
 {
     [SerializeField] private SpawnableElements spawnableElements;
+    [SerializeField] private UsableMaterials usableMaterials;
 
     //will hold the spawned walls
     [SerializeField] private List<GameObject> spawnedWalls = new List<GameObject>();
@@ -25,6 +26,8 @@ public class WallGenerator : MonoBehaviour
 
     private void GenerateWalls()
     {
+        int chosenMaterial = Random.Range(0, usableMaterials.WallMaterial.Length);
+
         //we will choose a random pos for the door wall
         doorWallPos = Random.Range(0, 3);
 
@@ -50,6 +53,9 @@ public class WallGenerator : MonoBehaviour
                 //setting the floor as parent
                 WallWithDoor.transform.parent = this.transform;
 
+                //giving our wall the material
+                WallWithDoor.GetComponent<MeshRenderer>().material = usableMaterials.WallMaterial[chosenMaterial];
+
                 //adding it to the list
                 spawnedWalls.Add(WallWithDoor);
             }
@@ -63,6 +69,9 @@ public class WallGenerator : MonoBehaviour
                 //setting the floor as parent
                 WallWithWindow.transform.parent = this.transform;
 
+                //giving our wall the material
+                WallWithWindow.GetComponent<MeshRenderer>().material = usableMaterials.WallMaterial[chosenMaterial];
+
                 //adding it to the list
                 spawnedWalls.Add(WallWithWindow);
             }
@@ -75,6 +84,9 @@ public class WallGenerator : MonoBehaviour
 
                 //setting the floor as parent
                 BasicWall.transform.parent = this.transform;
+
+                //giving our wall the material
+                BasicWall.GetComponent<MeshRenderer>().material = usableMaterials.WallMaterial[chosenMaterial];
 
                 //adding it to the list
                 spawnedWalls.Add(BasicWall);

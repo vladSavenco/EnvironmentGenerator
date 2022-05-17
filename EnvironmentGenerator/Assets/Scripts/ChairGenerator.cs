@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChairGenerator : MonoBehaviour
 {
     [SerializeField] private SpawnableElements spawnableElements;
+    [SerializeField] private UsableMaterials usableMaterials;
 
     //will hold the spawned floor objects
     [SerializeField] private List<GameObject> spawnedChairs = new List<GameObject>();
@@ -20,6 +21,7 @@ public class ChairGenerator : MonoBehaviour
     private void GenerateChairs()
     {
         int chosenChair = Random.Range(0, spawnableElements.Chairs.Length);
+        int chosenChairMaterial = Random.Range(0, usableMaterials.ChairMaterial.Length);
 
         //geting random position for the first required chair
         int chair1Pos = Random.Range(0, chairSpawnPoints.Length);
@@ -47,6 +49,9 @@ public class ChairGenerator : MonoBehaviour
                 //setting the table as parent
                 spawnedChair.transform.parent = this.transform;
 
+                //giving our spawned chair a random material
+                spawnedChair.GetComponent<MeshRenderer>().material = usableMaterials.ChairMaterial[chosenChairMaterial];
+
                 //adding it to the list
                 spawnedChairs.Add(spawnedChair);
             }
@@ -61,6 +66,9 @@ public class ChairGenerator : MonoBehaviour
 
                     //setting the table as parent
                     spawnedChair.transform.parent = this.transform;
+
+                    //giving our spawned chair a random material
+                    spawnedChair.GetComponent<MeshRenderer>().material = usableMaterials.ChairMaterial[chosenChairMaterial];
 
                     //adding it to the list
                     spawnedChairs.Add(spawnedChair);

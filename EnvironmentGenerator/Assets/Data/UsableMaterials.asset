@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55833b5417814624f815b7383db6942a, type: 3}
+  m_Name: UsableMaterials
+  m_EditorClassIdentifier: 
+  wallMaterial:
+  - {fileID: 2100000, guid: aac753ff70bb9e94c95f8f02b13ffc49, type: 2}
+  - {fileID: 2100000, guid: 0f9a7d8be5f492a4db19a29b627ddd61, type: 2}
+  floorMaterial:
+  - {fileID: 2100000, guid: 49e85cd4fda3cae43ba058952a5d4c0f, type: 2}
+  - {fileID: 2100000, guid: 4031084e6125eee40b5f443869648e0c, type: 2}
+  tableMaterial:
+  - {fileID: 2100000, guid: 4bec59fc61d16d348b3c32469b9eaeac, type: 2}
+  - {fileID: 2100000, guid: a36f66835b07193488608bc720195f1f, type: 2}
+  - {fileID: 2100000, guid: d781d38f86b4da84eacd8c04d6065f49, type: 2}
+  chairMaterial:
+  - {fileID: 2100000, guid: 4bec59fc61d16d348b3c32469b9eaeac, type: 2}
+  - {fileID: 2100000, guid: a36f66835b07193488608bc720195f1f, type: 2}
+  - {fileID: 2100000, guid: d781d38f86b4da84eacd8c04d6065f49, type: 2}
+  mugMaterial:
+  - {fileID: 2100000, guid: 4c6dd82572c01d04987bc9924ad9a143, type: 2}
+  - {fileID: 2100000, guid: 0282e154ab4c4d341a711b9a7e699b5a, type: 2}
+  - {fileID: 2100000, guid: 95cff7430288c1443b905c75fc21b840, type: 2}
+  - {fileID: 2100000, guid: 4290846010f533d488c25a78eb14d39d, type: 2}
+  plateMaterial:
+  - {fileID: 2100000, guid: 4c6dd82572c01d04987bc9924ad9a143, type: 2}
+  - {fileID: 2100000, guid: 0282e154ab4c4d341a711b9a7e699b5a, type: 2}
+  - {fileID: 2100000, guid: 95cff7430288c1443b905c75fc21b840, type: 2}
+  - {fileID: 2100000, guid: 4290846010f533d488c25a78eb14d39d, type: 2}
